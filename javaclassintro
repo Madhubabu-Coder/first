@@ -1,0 +1,28 @@
+class Cal
+{
+	int num1,num2;
+	
+	public int perform(int x,int y)
+	{
+		return x+y;
+		
+	}
+}
+public class Class_objects 
+{
+	public static void main(String args[])
+	{
+		Cal obj;   // it is the refernce..
+		obj=new Cal(); // new cal is the object..
+		               // new is used to the allocate the memory
+		               // Cal is used to store the memory...
+		obj.num1 = 10;
+		obj.num2 = 20;
+		
+		int result = obj.perform(obj.num1,obj.num2);
+		
+		
+		System.out.println("Result="+result);
+	}
+
+}
